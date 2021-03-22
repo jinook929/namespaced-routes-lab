@@ -1,0 +1,11 @@
+<h1>Preference Index Page</h1>
+
+<% @preferences.each.with_index do |p, i| %>
+  <h3>Preference Configuration for #<%= i + 1 %></h3>
+  <p>
+    allow_create_artists? <%= p.allow_create_artists %>
+    <br>
+    allow_create_songs? <%= p.allow_create_songs %>
+    <hr>
+  </p>  
+<% end %>
